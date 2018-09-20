@@ -1,15 +1,8 @@
-Title: テストブログ
-Date: 2014-01-04 22:00
-Category: Pelican
-Tags: pelican, python
-Slug: First-Post
+Title: PyCon JP 2018
+Date: 2018-09-20 00:00
+Category: Conference
+Tags: conference, python
 Author: rkamikaw
-Summary: 記事の要約です。
+Summary: PyCon JP 2018 についてのまとめ
 
-# ペリカン記事のタイトル
-
-- SyntaxHighlitだってバッチリ！
-
- ```python
- print "Hello World!!"
- ```
+# PyCon JP 2018
