@@ -39,6 +39,7 @@ class Operator:
         self.__cmd(f"pip install --user {pip_txt}")
 
     def update(self):
+        self.__cmd(f"rm {self.__blog['dst']}/*")
         self.__cmd(f"cp -v {self.__blog['src']}/* {self.__blog['dst']}/")
         self.__cmd("make html")
         self.__cmd("ghp-import output")
