@@ -26,8 +26,8 @@ class Operator:
             'src': join('/', 'Users', 'rkamikaw', 'vscode', 'blog'),
             'dst': join(current, 'content'),
             'output': join(current, 'output'),
-            'output_orig': join(current, 'output.orig'),
             }
+        self.__generate_sitemap = join(current, 'generate_sitemap.py')
 
     def __cmd(self, cmd: Text):
         print(cmd)
@@ -73,13 +73,13 @@ class Operator:
     def prepare(self):
         self.__cmd(f'rm {self.__blog["output"]}/*')
         self.__cmd(f'rm {self.__blog["dst"]}/*')
-        self.__cmd(f'cp -v {self.__blog["src"]}/* {self.__blog["dst"]}/')
+        self.__cmd(f'cp -pv {self.__blog["src"]}/* {self.__blog["dst"]}/')
         self.__cmd('make html')
-        self.__cmd(f'cp -rv {self.__blog["src"]}/img_* {self.__blog["output"]}/')
+        self.__cmd(f'cp -rpv {self.__blog["src"]}/img_* {self.__blog["output"]}/')
 
     def upload(self):
         self.__cmd('ghp-import output')
-        self.__cmd(f'cp -rv {self.__blog["output_orig"]}/* {self.__blog["output"]}/')
+        self.__cmd(f'{self.__generate_sitemap}')
         self.__insert_ad()
         self.__cmd('git push https://github.com/ryoka419319/ryoka419319.github.io.git gh-pages:master')
 
