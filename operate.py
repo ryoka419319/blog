@@ -38,6 +38,8 @@ class Operator:
             'pelican',
             'Markdown',
             'ghp-import',
+            'lxml',
+            'pytz',
             ]
     
         pip_txt: Text = ' '.join(pips)
@@ -78,9 +80,9 @@ class Operator:
         self.__cmd(f'cp -rpv {self.__blog["src"]}/img_* {self.__blog["output"]}/')
 
     def upload(self):
-        self.__cmd('ghp-import output')
         self.__cmd(f'{self.__generate_sitemap}')
         self.__insert_ad()
+        self.__cmd('ghp-import output')
         self.__cmd('git push https://github.com/ryoka419319/ryoka419319.github.io.git gh-pages:master')
 
     def release(self):
