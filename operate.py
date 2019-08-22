@@ -86,19 +86,30 @@ class Operator:
         self.__cmd('ghp-import output')
         self.__cmd('git push https://github.com/ryoka419319/ryoka419319.github.io.git gh-pages:master')
 
-    def release(self):
-        self.prepare()
-        self.upload()
-
 
 if __name__ == '__main__':
     def parse_args():
         parser = ArgumentParser(description='Operation for blog.')
 
         parser.add_argument(
-            'operation',
-            action='store',
-            help='Operation. [prepare, upload, release]'
+            '--prepare', '-p',
+            action='store_true',
+            defaul=False,
+            help='Make html from markdown.'
+            )
+
+        parser.add_argument(
+            '--upload', '-u',
+            action='store_true',
+            defaul=False,
+            help='Upload to GitHub'
+            )
+
+        parser.add_argument(
+            '--release', '-r',
+            action='store_true',
+            defaul=False,
+            help='Prepare and Upload'
             )
 
         return parser.parse_args()
@@ -106,6 +117,11 @@ if __name__ == '__main__':
     args = parse_args()
     o = Operator()
 
-    method = getattr(o, args.operation)
-    method()
+    if args.prepare:
+        o.prepare()
+    elif args.upload:
+        o.upload()
+    elif args.release:
+        o.prepare()
+        o.upload()
 
