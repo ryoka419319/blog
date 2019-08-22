@@ -25,6 +25,7 @@ class Operator:
         self.__blog = {
             'src': join('/', 'Users', 'rkamikaw', 'vscode', 'blog'),
             'dst': join(current, 'content'),
+            'img': join(current, 'img'),
             'output': join(current, 'output'),
             }
         self.__generate_sitemap = join(current, 'generate_sitemap.py')
@@ -77,7 +78,7 @@ class Operator:
         self.__cmd(f'rm {self.__blog["dst"]}/*')
         self.__cmd(f'cp -pv {self.__blog["src"]}/* {self.__blog["dst"]}/')
         self.__cmd('make html')
-        self.__cmd(f'cp -rpv {self.__blog["src"]}/img_* {self.__blog["output"]}/')
+        self.__cmd(f'cp -rpv {self.__blog["img"]}/img_* {self.__blog["output"]}/')
 
     def upload(self):
         self.__cmd(f'{self.__generate_sitemap}')
