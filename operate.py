@@ -74,9 +74,9 @@ class Operator:
                     fd.write(line)
 
     def prepare(self):
-        self.__cmd(f'rm {self.__blog["output"]}/*')
-        self.__cmd(f'rm {self.__blog["dst"]}/*')
-        self.__cmd(f'cp -pv {self.__blog["src"]}/* {self.__blog["dst"]}/')
+#        self.__cmd(f'rm {self.__blog["output"]}/*')
+#        self.__cmd(f'rm {self.__blog["dst"]}/*')
+#        self.__cmd(f'cp -pv {self.__blog["src"]}/* {self.__blog["dst"]}/')
         self.__cmd('make html')
         self.__cmd(f'cp -rpv {self.__blog["img"]}/img_* {self.__blog["output"]}/')
 
