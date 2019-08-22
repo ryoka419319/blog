@@ -97,7 +97,7 @@ if __name__ == '__main__':
         parser.add_argument(
             'operation',
             action='store',
-            help='Operation.'
+            help='Operation. [prepare, upload, release]'
             )
 
         return parser.parse_args()
