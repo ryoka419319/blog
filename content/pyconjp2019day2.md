@@ -18,3 +18,5 @@ Summary: PyCon JP 2019 Day2 についてのまとめ
 * 15:45 - 16:00 機械学習ライブラリのPython API作成方法 (Convention Hall UME)
 * 16:15 - 16:30 DjangoとJupyterで始めるPyData (Small Exhibition Hall)
 * 16:30 - 帰福
+
+## 内容

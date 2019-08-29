@@ -45,6 +45,7 @@ class Operator:
     
         pip_txt: Text = ' '.join(pips)
     
+        self.__cmd('pip install --upgrade pip')
         self.__cmd(f'pip install --user {pip_txt}')
 
     def __get_ad_text(self):
@@ -92,23 +93,30 @@ if __name__ == '__main__':
         parser = ArgumentParser(description='Operation for blog.')
 
         parser.add_argument(
+            '--setup', '-s',
+            action='store_true',
+            default=False,
+            help='Setup for this script.'
+            )
+
+        parser.add_argument(
             '--prepare', '-p',
             action='store_true',
-            defaul=False,
+            default=False,
             help='Make html from markdown.'
             )
 
         parser.add_argument(
             '--upload', '-u',
             action='store_true',
-            defaul=False,
+            default=False,
             help='Upload to GitHub'
             )
 
         parser.add_argument(
             '--release', '-r',
             action='store_true',
-            defaul=False,
+            default=False,
             help='Prepare and Upload'
             )
 
@@ -117,7 +125,9 @@ if __name__ == '__main__':
     args = parse_args()
     o = Operator()
 
-    if args.prepare:
+    if args.setup:
+        o.install()
+    elif args.prepare:
         o.prepare()
     elif args.upload:
         o.upload()

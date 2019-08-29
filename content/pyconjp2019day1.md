@@ -22,3 +22,5 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
 * 17:20 - 17:30 Photo Session1 (Large Exhibition Hall)
 * 17:30 - 18:00 Same Day LT & Day1 Closing (Large Exhibition Hall)
 * 18:00 - パーティ
+
+## 内容
