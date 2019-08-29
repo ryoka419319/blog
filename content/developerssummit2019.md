@@ -214,8 +214,6 @@ Uber: [https://www.uber.design/case-studies/rebrand-2018](https://www.uber.desig
 
 図を使って、デザインシステムを考え、思考軸を決めておくとよい。
 
-※図を貼ります。
-
 ### モバイルゲーム運営における、認知資源をより有効活用していくための取り組み
 
 #### 認知資源
