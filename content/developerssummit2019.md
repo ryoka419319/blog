@@ -261,8 +261,6 @@ https://room360.low-ya.com/
 
 CloudでServerlessを活用したら良い（AWS, GCPなどを使って）
 
-
-
 ### ヤフー、メルカリ、ZOZO 東京の会社の福岡拠点で働くということ
 
 #### 

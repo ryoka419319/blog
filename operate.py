@@ -85,7 +85,7 @@ class Operator:
         self.__cmd(f'{self.__generate_sitemap}')
         self.__insert_ad()
         self.__cmd('ghp-import output')
-        self.__cmd('git push https://github.com/ryoka419319/ryoka419319.github.io.git gh-pages:master')
+        self.__cmd('git push -f https://github.com/ryoka419319/ryoka419319.github.io.git gh-pages:master')
 
 
 if __name__ == '__main__':
