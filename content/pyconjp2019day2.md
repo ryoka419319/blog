@@ -143,16 +143,16 @@ pvector([0, 2, 4])
 
   [pampy](https://github.com/santinic/pampy)
 
-  ```
-  from pampy import match, _
+```python
+from pampy import match, _
 
-  input = [1, 2, 3]
-  pattern = [1, 2, _]
-  action = lambda x: f"it's {x}"
+input = [1, 2, 3]
+pattern = [1, 2, _]
+action = lambda x: f"it's {x}"
 
-  # pattern にマッチした場合に action が実行される
-  match(input, pattern, action)
-  ```
+# pattern にマッチした場合に action が実行される
+match(input, pattern, action)
+```
 
 #### モナド（Monad）
 
