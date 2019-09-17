@@ -321,9 +321,14 @@ section, article, header, footer, nav, aside, hgroup {
 
 /********END HTML5 ELEMENT DECLARATIONS****** */
 @media screen and (max-width: 714px) {
-  /* line 5, sass/_sp.sass */
-  .article article .content p {
+  /* line 2, sass/_sp.sass */
+  html {
     font-size: 14px;
+  }
+
+  /* line 6, sass/_sp.sass */
+  .article img {
+    max-height: 300px;
   }
 }
 /* END MIXINS */
@@ -568,11 +573,12 @@ footer p {
 /* line 171, sass/main.sass */
 .article img {
   max-width: 100%;
+  max-height: 500px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 174, sass/main.sass */
+/* line 175, sass/main.sass */
 .article article {
   display: inline-block;
   width: 85%;
@@ -584,20 +590,20 @@ footer p {
   /*Article Header */
   /* Article content styles */
 }
-/* line 182, sass/main.sass */
+/* line 183, sass/main.sass */
 .article article footer {
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 185, sass/main.sass */
+/* line 186, sass/main.sass */
 .article article footer p {
   text-align: center;
 }
-/* line 189, sass/main.sass */
+/* line 190, sass/main.sass */
 .article article header .project-header-logo {
   padding-bottom: 4em;
 }
-/* line 191, sass/main.sass */
+/* line 192, sass/main.sass */
 .article article header h2 {
   font-size: 2em;
   /* 32/16 = 2 */
@@ -605,7 +611,7 @@ footer p {
   font-weight: 900;
   text-align: center;
 }
-/* line 198, sass/main.sass */
+/* line 199, sass/main.sass */
 .article article .content {
   font-size: 1.125em;
   /* 18/16 = 1.125 */
@@ -615,56 +621,56 @@ footer p {
   /* italics */
   /* code blocks */
 }
-/* line 202, sass/main.sass */
+/* line 203, sass/main.sass */
 .article article .content p {
   padding-bottom: 1.5em;
 }
-/* line 205, sass/main.sass */
+/* line 206, sass/main.sass */
 .article article .content h2 {
   font-size: 1.4em;
   padding-bottom: 0.75em;
   padding-top: 1.5em;
   font-weight: 900;
 }
-/* line 210, sass/main.sass */
+/* line 211, sass/main.sass */
 .article article .content h3 {
   font-size: 1.2em;
   padding-bottom: 0.75em;
   padding-top: 1.5em;
   font-weight: 900;
 }
-/* line 215, sass/main.sass */
+/* line 216, sass/main.sass */
 .article article .content h4 {
   font-size: 1em;
   padding-bottom: 1.25em;
   padding-top: 1em;
   font-weight: 900;
 }
-/* line 221, sass/main.sass */
+/* line 222, sass/main.sass */
 .article article .content ul, .article article .content ol {
   width: 85%;
   margin: 0 auto;
   line-height: 2;
   padding-bottom: 2em;
 }
-/* line 226, sass/main.sass */
+/* line 227, sass/main.sass */
 .article article .content ul {
   list-style-type: square;
 }
-/* line 228, sass/main.sass */
+/* line 229, sass/main.sass */
 .article article .content ol {
   list-style-type: decimal;
 }
-/* line 231, sass/main.sass */
+/* line 232, sass/main.sass */
 .article article .content em {
   font-style: italic;
   font-size: 0.8em;
 }
-/* line 235, sass/main.sass */
+/* line 236, sass/main.sass */
 .article article .content .highlight {
   margin-bottom: 1.5em;
 }
-/* line 237, sass/main.sass */
+/* line 238, sass/main.sass */
 .article article .content pre {
   padding-bottom: 1.75em;
   padding-top: 1em;
@@ -679,29 +685,29 @@ footer p {
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
-/* line 251, sass/main.sass */
+/* line 252, sass/main.sass */
 .article article .content span.nv {
   color: #c65d09;
   font-weight: 900;
 }
-/* line 255, sass/main.sass */
+/* line 256, sass/main.sass */
 .article article .content span.article-masthead-icon {
   display: none;
 }
-/* line 258, sass/main.sass */
+/* line 259, sass/main.sass */
 .article article .content .embedded-tweet {
   margin-top: 1em;
   margin-bottom: 2em;
 }
 
-/* line 262, sass/main.sass */
+/* line 263, sass/main.sass */
 .back-to-top {
   padding-top: 2em;
   text-align: center;
   margin-bottom: 6em;
   margin-top: 2em;
 }
-/* line 267, sass/main.sass */
+/* line 268, sass/main.sass */
 .back-to-top a {
   font-size: 1.5em;
   /* 24/16=1.5 */
@@ -710,7 +716,7 @@ footer p {
 
 /* END ARTICLE */
 /* TAGS */
-/* line 274, sass/main.sass */
+/* line 275, sass/main.sass */
 .tag {
   background: #E1ECF4;
   border-radius: 3px;
@@ -724,17 +730,17 @@ footer p {
   text-decoration: none;
   -webkit-transition: color 0.2s;
 }
-/* line 286, sass/main.sass */
+/* line 287, sass/main.sass */
 .tag:hover {
   background-color: crimson;
   color: white;
 }
-/* line 289, sass/main.sass */
+/* line 290, sass/main.sass */
 .tag:hover::after {
   border-left-color: crimson;
 }
 
-/* line 292, sass/main.sass */
+/* line 293, sass/main.sass */
 .category-tag {
   font-style: italic;
   color: #39739d;
@@ -743,32 +749,32 @@ footer p {
 
 /* END TAGS */
 /* PAGINATION */
-/* line 299, sass/main.sass */
+/* line 300, sass/main.sass */
 .paginator {
   font-size: 3em;
   text-align: center;
 }
-/* line 302, sass/main.sass */
+/* line 303, sass/main.sass */
 .paginator span {
   font-size: 0.5em;
 }
-/* line 304, sass/main.sass */
+/* line 305, sass/main.sass */
 .paginator a.previous {
   float: left;
 }
-/* line 306, sass/main.sass */
+/* line 307, sass/main.sass */
 .paginator a.next {
   float: right;
 }
 
 /* END PAGINATION */
 /* TAGS/CATEGORIES */
-/* line 311, sass/main.sass */
+/* line 312, sass/main.sass */
 .page-title {
   border-bottom: 2px solid black;
   margin: 0 2em;
 }
-/* line 314, sass/main.sass */
+/* line 315, sass/main.sass */
 .page-title h1 {
   font-size: 3em;
   padding-bottom: 0.75em;
@@ -776,14 +782,14 @@ footer p {
   text-align: left;
 }
 
-/* line 319, sass/main.sass */
+/* line 320, sass/main.sass */
 .count {
   float: right;
 }
 
 /* TAGS/CATEGORIES */
 /* SOCIAL ICONS */
-/* line 324, sass/main.sass */
+/* line 325, sass/main.sass */
 .icon {
   width: 2em;
   height: 2em;
@@ -791,26 +797,26 @@ footer p {
   padding: 0 0.5em;
 }
 
-/* line 330, sass/main.sass */
+/* line 331, sass/main.sass */
 .icons {
   margin: 2em auto;
 }
 
 /* DISQUS COMMENTS */
-/* line 334, sass/main.sass */
+/* line 335, sass/main.sass */
 #disqus_thread {
   margin-bottom: 10em;
 }
 
 /* GRAVATARS */
-/* line 338, sass/main.sass */
+/* line 339, sass/main.sass */
 .gravatar {
   border-radius: 50%;
 }
 
 /* END GRAVATARS */
 /* EMOJIS */
-/* line 343, sass/main.sass */
+/* line 344, sass/main.sass */
 img.emoji {
   margin: 0;
   vertical-align: -0.3em;
@@ -820,12 +826,12 @@ img.emoji {
 
 /* END EMOJIS */
 /* TABLE */
-/* line 351, sass/main.sass */
+/* line 352, sass/main.sass */
 th, td {
   padding-left: 10px;
 }
 
-/* line 354, sass/main.sass */
+/* line 355, sass/main.sass */
 th:first-child, td:first-child {
   padding-left: 0;
 }
