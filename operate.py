@@ -27,6 +27,7 @@ class Operator:
             'dst': join(current, 'content'),
             'img': join(current, 'img'),
             'output': join(current, 'output'),
+            'logo': join(current, 'brutalist', 'logo'),
             }
         self.__generate_sitemap = join(current, 'generate_sitemap.py')
 
@@ -42,9 +43,9 @@ class Operator:
             'lxml',
             'pytz',
             ]
-    
+
         pip_txt: Text = ' '.join(pips)
-    
+
         self.__cmd('pip install --upgrade pip')
         self.__cmd(f'pip install --user {pip_txt}')
 
@@ -77,6 +78,7 @@ class Operator:
     def prepare(self):
         self.__cmd('make html')
         self.__cmd(f'cp -rpv {self.__blog["img"]}/img_* {self.__blog["output"]}/')
+        self.__cmd(f'cp -fv {self.__blog["logo"]}/favicon.ico {self.__blog["output"]}/')
 
     def upload(self):
         self.__cmd(f'{self.__generate_sitemap}')
