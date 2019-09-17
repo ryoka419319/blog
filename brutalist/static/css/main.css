@@ -1,194 +1,248 @@
 @charset "UTF-8";
 /************************
- * *
- * *Brutal Pelican Theme for mamcmanus.com
- * *© 2018 Matt McManus
- * *
- * ***********************
- * */
+ *
+ *Brutal Pelican Theme for mamcmanus.com
+ *© 2018 Matt McManus
+ *
+ ***********************
+ */
 /* MIXINS */
+/* line 1, sass/_pygment.sass */
 .highlight {
   background: #f8f8f8;
 }
+/* line 2, sass/_pygment.sass */
 .highlight .hll {
   background-color: #ffffcc;
 }
+/* line 5, sass/_pygment.sass */
 .highlight .c {
   color: #408080;
   font-style: italic;
 }
+/* line 8, sass/_pygment.sass */
 .highlight .err {
   border: 1px solid #FF0000;
 }
+/* line 10, sass/_pygment.sass */
 .highlight .k {
   color: #008000;
   font-weight: bold;
 }
+/* line 13, sass/_pygment.sass */
 .highlight .o {
   color: #666666;
 }
+/* line 15, sass/_pygment.sass */
 .highlight .ch, .highlight .cm {
   color: #408080;
   font-style: italic;
 }
+/* line 18, sass/_pygment.sass */
 .highlight .cp {
   color: #BC7A00;
 }
+/* line 20, sass/_pygment.sass */
 .highlight .cpf, .highlight .c1, .highlight .cs {
   color: #408080;
   font-style: italic;
 }
+/* line 23, sass/_pygment.sass */
 .highlight .gd {
   color: #A00000;
 }
+/* line 25, sass/_pygment.sass */
 .highlight .ge {
   font-style: italic;
 }
+/* line 27, sass/_pygment.sass */
 .highlight .gr {
   color: #FF0000;
 }
+/* line 29, sass/_pygment.sass */
 .highlight .gh {
   color: #000080;
   font-weight: bold;
 }
+/* line 32, sass/_pygment.sass */
 .highlight .gi {
   color: #00A000;
 }
+/* line 34, sass/_pygment.sass */
 .highlight .go {
   color: #888888;
 }
+/* line 36, sass/_pygment.sass */
 .highlight .gp {
   color: #000080;
   font-weight: bold;
 }
+/* line 39, sass/_pygment.sass */
 .highlight .gs {
   font-weight: bold;
 }
+/* line 41, sass/_pygment.sass */
 .highlight .gu {
   color: #800080;
   font-weight: bold;
 }
+/* line 44, sass/_pygment.sass */
 .highlight .gt {
   color: #0044DD;
 }
+/* line 46, sass/_pygment.sass */
 .highlight .kc, .highlight .kd, .highlight .kn {
   color: #008000;
   font-weight: bold;
 }
+/* line 49, sass/_pygment.sass */
 .highlight .kp {
   color: #008000;
 }
+/* line 51, sass/_pygment.sass */
 .highlight .kr {
   color: #008000;
   font-weight: bold;
 }
+/* line 54, sass/_pygment.sass */
 .highlight .kt {
   color: #B00040;
 }
+/* line 56, sass/_pygment.sass */
 .highlight .m {
   color: #666666;
 }
+/* line 58, sass/_pygment.sass */
 .highlight .s {
   color: #BA2121;
 }
+/* line 60, sass/_pygment.sass */
 .highlight .na {
   color: #7D9029;
 }
+/* line 62, sass/_pygment.sass */
 .highlight .nb {
   color: #008000;
 }
+/* line 64, sass/_pygment.sass */
 .highlight .nc {
   color: #0000FF;
   font-weight: bold;
 }
+/* line 67, sass/_pygment.sass */
 .highlight .no {
   color: #880000;
 }
+/* line 69, sass/_pygment.sass */
 .highlight .nd {
   color: #AA22FF;
 }
+/* line 71, sass/_pygment.sass */
 .highlight .ni {
   color: #999999;
   font-weight: bold;
 }
+/* line 74, sass/_pygment.sass */
 .highlight .ne {
   color: #D2413A;
   font-weight: bold;
 }
+/* line 77, sass/_pygment.sass */
 .highlight .nf {
   color: #0000FF;
 }
+/* line 79, sass/_pygment.sass */
 .highlight .nl {
   color: #A0A000;
 }
+/* line 81, sass/_pygment.sass */
 .highlight .nn {
   color: #0000FF;
   font-weight: bold;
 }
+/* line 84, sass/_pygment.sass */
 .highlight .nt {
   color: #008000;
   font-weight: bold;
 }
+/* line 87, sass/_pygment.sass */
 .highlight .nv {
   color: #19177C;
 }
+/* line 89, sass/_pygment.sass */
 .highlight .ow {
   color: #AA22FF;
   font-weight: bold;
 }
+/* line 92, sass/_pygment.sass */
 .highlight .w {
   color: #bbbbbb;
 }
+/* line 94, sass/_pygment.sass */
 .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo {
   color: #666666;
 }
+/* line 96, sass/_pygment.sass */
 .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl {
   color: #BA2121;
 }
+/* line 98, sass/_pygment.sass */
 .highlight .sd {
   color: #BA2121;
   font-style: italic;
 }
+/* line 101, sass/_pygment.sass */
 .highlight .s2 {
   color: #BA2121;
 }
+/* line 103, sass/_pygment.sass */
 .highlight .se {
   color: #BB6622;
   font-weight: bold;
 }
+/* line 106, sass/_pygment.sass */
 .highlight .sh {
   color: #BA2121;
 }
+/* line 108, sass/_pygment.sass */
 .highlight .si {
   color: #BB6688;
   font-weight: bold;
 }
+/* line 111, sass/_pygment.sass */
 .highlight .sx {
   color: #008000;
 }
+/* line 113, sass/_pygment.sass */
 .highlight .sr {
   color: #BB6688;
 }
+/* line 115, sass/_pygment.sass */
 .highlight .s1 {
   color: #BA2121;
 }
+/* line 117, sass/_pygment.sass */
 .highlight .ss {
   color: #19177C;
 }
+/* line 119, sass/_pygment.sass */
 .highlight .bp {
   color: #008000;
 }
+/* line 121, sass/_pygment.sass */
 .highlight .fm {
   color: #0000FF;
 }
+/* line 123, sass/_pygment.sass */
 .highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm {
   color: #19177C;
 }
+/* line 125, sass/_pygment.sass */
 .highlight .il {
   color: #666666;
 }
 
-/********VIEWPORT SETTINGS*******/
+/********VIEWPORT SETTINGS****** */
 @-webkit-viewport {
   width: device-width;
 }
@@ -206,6 +260,7 @@
 }
 /* html5doctor.com/html-5-reset-stylesheet/ */
 /* http://meyerweb.com/eric/tools/css/reset/ */
+/* line 19, sass/_reset.sass */
 html, body, div, span, object, iframe, h1, h2,
 h3, h4, h5, h6, p, blockquote, pre, abbr, address,
 cite, code, del, dfn, em, img, ins, kbd, q, samp, small,
@@ -221,71 +276,84 @@ th, td, time, mark, audio, video {
   background: transparent;
 }
 
+/* line 33, sass/_reset.sass */
 body {
   line-height: 1;
 }
 
+/* line 36, sass/_reset.sass */
 ol, ul {
   list-style: none;
 }
 
+/* line 39, sass/_reset.sass */
 blockquote, q {
   quotes: none;
 }
 
+/* line 42, sass/_reset.sass */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
 
+/* line 46, sass/_reset.sass */
 ins {
   text-decoration: none;
 }
 
+/* line 49, sass/_reset.sass */
 del {
   text-decoration: line-through;
 }
 
+/* line 52, sass/_reset.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/********HTML5 ELEMENT DECLARATIONS*******/
+/********HTML5 ELEMENT DECLARATIONS****** */
+/* line 57, sass/_reset.sass */
 section, article, header, footer, nav, aside, hgroup {
   display: block;
 }
 
-/********END HTML5 ELEMENT DECLARATIONS*******/
+/********END HTML5 ELEMENT DECLARATIONS****** */
 /* END MIXINS */
 /* VARIABLES */
 /* END VARIABLES */
 /* FONTS */
+/* line 24, sass/main.sass */
 body {
   font-family: "Lato", sans-serif;
 }
 
 /* END FONTS */
 /* MAIN CONTENT CONTAINER */
+/* line 29, sass/main.sass */
 .page {
   max-width: 50em;
-  /* max-width: 42.5em; */
+  /* max-width: 42.5em */
   /* 680/16 = 42.5 */
   margin: auto;
   text-align: center;
   line-height: 1.5;
 }
 @media (min-width: 55em) {
+  /* line 29, sass/main.sass */
   .page {
     padding-left: 30%;
   }
 }
 @media (min-width: 65em) {
+  /* line 29, sass/main.sass */
   .page {
     padding-left: 20%;
   }
 }
 @media (min-width: 75em) {
+  /* line 29, sass/main.sass */
   .page {
     padding-left: 0;
   }
@@ -293,16 +361,19 @@ body {
 
 /* END MAIN CONTENT CONTAINER */
 /* LINKS */
+/* line 45, sass/main.sass */
 a {
   text-decoration: underline;
   color: #232a2e;
 }
+/* line 48, sass/main.sass */
 a:hover {
   color: #39739d;
 }
 
 /* END LINKS */
 /* NAVIGATION */
+/* line 54, sass/main.sass */
 div#masthead img {
   display: inline-block;
   max-width: 20%;
@@ -310,11 +381,13 @@ div#masthead img {
   height: auto;
 }
 @media (min-width: 37.5em) {
+  /* line 54, sass/main.sass */
   div#masthead img {
     max-width: 10%;
   }
 }
 @media (min-width: 55em) {
+  /* line 54, sass/main.sass */
   div#masthead img {
     display: block;
     max-width: 60%;
@@ -322,11 +395,13 @@ div#masthead img {
   }
 }
 @media (min-width: 65em) {
+  /* line 54, sass/main.sass */
   div#masthead img {
     max-width: 50%;
   }
 }
 @media (min-width: 55em) {
+  /* line 53, sass/main.sass */
   div#masthead {
     position: fixed;
     max-width: 20%;
@@ -334,6 +409,7 @@ div#masthead img {
     padding-top: 5%;
   }
 }
+/* line 73, sass/main.sass */
 div#masthead nav#menu {
   clear: both;
   -webkit-transition: all 0.3s ease-out;
@@ -345,30 +421,36 @@ div#masthead nav#menu {
   max-height: 0;
 }
 @media (min-width: 55em) {
+  /* line 73, sass/main.sass */
   div#masthead nav#menu {
     max-height: none;
     padding-top: 15%;
   }
+  /* line 85, sass/main.sass */
   div#masthead nav#menu li {
     display: block;
     font-weight: 400;
     font-size: 1.2em;
   }
 }
+/* line 90, sass/main.sass */
 div#masthead nav#menu#menu.active {
   max-height: 15em;
   padding: 2em 0;
 }
+/* line 94, sass/main.sass */
 div#masthead nav#menu ul {
   border-top: 1px solid #808080;
   text-align: center;
 }
 @media (min-width: 55em) {
+  /* line 94, sass/main.sass */
   div#masthead nav#menu ul {
     border: 0;
     text-align: left;
   }
 }
+/* line 101, sass/main.sass */
 div#masthead nav#menu li a {
   display: block;
   padding: 0.8em;
@@ -376,10 +458,12 @@ div#masthead nav#menu li a {
   border-bottom: 1px solid #808080;
 }
 @media (min-width: 55em) {
+  /* line 101, sass/main.sass */
   div#masthead nav#menu li a {
     border: 0;
   }
 }
+/* line 109, sass/main.sass */
 div#masthead a#menu-link {
   float: right;
   display: block;
@@ -388,6 +472,7 @@ div#masthead a#menu-link {
   font-size: 1.2em;
 }
 @media (min-width: 55em) {
+  /* line 109, sass/main.sass */
   div#masthead a#menu-link {
     display: none;
   }
@@ -395,64 +480,78 @@ div#masthead a#menu-link {
 
 /* END NAVIGATION */
 /* FOOTER */
+/* line 120, sass/main.sass */
 footer {
   margin-bottom: 2em;
   margin-top: 2em;
 }
+/* line 123, sass/main.sass */
 footer p {
   color: #abb4b9;
 }
 
 /* END FOOTER STYLES */
 /* ARTICLES */
+/* line 128, sass/main.sass */
 .articles {
   text-align: left;
   padding: 1.5em;
 }
+/* line 131, sass/main.sass */
 .articles ol li {
   padding-bottom: 4em;
   padding-top: 1em;
 }
 @media (min-width: 55em) {
+  /* line 128, sass/main.sass */
   .articles {
     padding: 2em;
     padding-top: 4.25em;
   }
 }
+/* line 137, sass/main.sass */
 .articles article {
   line-height: 2em;
 }
+/* line 139, sass/main.sass */
 .articles article footer {
   padding-bottom: 0.25em;
   margin-bottom: 0;
   margin-top: 0;
 }
+/* line 143, sass/main.sass */
 .articles article header {
   padding-bottom: 1em;
 }
+/* line 145, sass/main.sass */
 .articles article header a {
   text-decoration: none;
 }
+/* line 147, sass/main.sass */
 .articles article header h2 {
   font-size: 2em;
   line-height: 1.3em;
 }
+/* line 150, sass/main.sass */
 .articles article .summary {
   padding-bottom: 1em;
   font-size: 1.125em;
   font-weight: 100;
 }
+/* line 154, sass/main.sass */
 .articles article .readmore {
   color: #39739d;
   float: right;
   text-decoration: underline;
 }
+/* line 158, sass/main.sass */
 .articles article .tags {
   list-style: none;
   margin: 0;
   overflow: hidden;
   padding: 0;
 }
+/* line 163, sass/main.sass */
 .articles article .tags li {
   float: left;
   padding: 0;
@@ -460,12 +559,14 @@ footer p {
 
 /* END ARTICLES */
 /* ARTICLE */
+/* line 170, sass/main.sass */
 .article img {
   max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+/* line 173, sass/main.sass */
 .article article {
   display: inline-block;
   width: 85%;
@@ -473,27 +574,32 @@ footer p {
   text-align: left;
   line-height: 1.75;
   padding-top: 6em;
-  /* Article published date*/
+  /* Article published date */
   /*Article Header */
   /* Article content styles */
 }
+/* line 181, sass/main.sass */
 .article article footer {
   margin-bottom: 0;
   margin-top: 0;
 }
+/* line 184, sass/main.sass */
 .article article footer p {
   text-align: center;
 }
+/* line 188, sass/main.sass */
 .article article header .project-header-logo {
   padding-bottom: 4em;
 }
+/* line 190, sass/main.sass */
 .article article header h2 {
   font-size: 2em;
-  /* 32/16 = 2*/
+  /* 32/16 = 2 */
   padding-bottom: 1em;
   font-weight: 900;
   text-align: center;
 }
+/* line 197, sass/main.sass */
 .article article .content {
   font-size: 1.125em;
   /* 18/16 = 1.125 */
@@ -503,46 +609,57 @@ footer p {
   /* italics */
   /* code blocks */
 }
+/* line 201, sass/main.sass */
 .article article .content p {
   padding-bottom: 1.5em;
+  font-size: 1.6rem;
 }
+/* line 205, sass/main.sass */
 .article article .content h2 {
   font-size: 1.4em;
   padding-bottom: 0.75em;
   padding-top: 1.5em;
   font-weight: 900;
 }
+/* line 210, sass/main.sass */
 .article article .content h3 {
   font-size: 1.2em;
   padding-bottom: 0.75em;
   padding-top: 1.5em;
   font-weight: 900;
 }
+/* line 215, sass/main.sass */
 .article article .content h4 {
   font-size: 1em;
   padding-bottom: 1.25em;
   padding-top: 1em;
   font-weight: 900;
 }
+/* line 221, sass/main.sass */
 .article article .content ul, .article article .content ol {
   width: 85%;
   margin: 0 auto;
   line-height: 2;
   padding-bottom: 2em;
 }
+/* line 226, sass/main.sass */
 .article article .content ul {
   list-style-type: square;
 }
+/* line 228, sass/main.sass */
 .article article .content ol {
   list-style-type: decimal;
 }
+/* line 231, sass/main.sass */
 .article article .content em {
   font-style: italic;
   font-size: 0.8em;
 }
+/* line 235, sass/main.sass */
 .article article .content .highlight {
   margin-bottom: 1.5em;
 }
+/* line 237, sass/main.sass */
 .article article .content pre {
   padding-bottom: 1.75em;
   padding-top: 1em;
@@ -557,24 +674,29 @@ footer p {
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
+/* line 251, sass/main.sass */
 .article article .content span.nv {
   color: #c65d09;
   font-weight: 900;
 }
+/* line 255, sass/main.sass */
 .article article .content span.article-masthead-icon {
   display: none;
 }
+/* line 258, sass/main.sass */
 .article article .content .embedded-tweet {
   margin-top: 1em;
   margin-bottom: 2em;
 }
 
+/* line 262, sass/main.sass */
 .back-to-top {
   padding-top: 2em;
   text-align: center;
   margin-bottom: 6em;
   margin-top: 2em;
 }
+/* line 267, sass/main.sass */
 .back-to-top a {
   font-size: 1.5em;
   /* 24/16=1.5 */
@@ -583,6 +705,7 @@ footer p {
 
 /* END ARTICLE */
 /* TAGS */
+/* line 274, sass/main.sass */
 .tag {
   background: #E1ECF4;
   border-radius: 3px;
@@ -596,14 +719,17 @@ footer p {
   text-decoration: none;
   -webkit-transition: color 0.2s;
 }
+/* line 286, sass/main.sass */
 .tag:hover {
   background-color: crimson;
   color: white;
 }
+/* line 289, sass/main.sass */
 .tag:hover::after {
   border-left-color: crimson;
 }
 
+/* line 292, sass/main.sass */
 .category-tag {
   font-style: italic;
   color: #39739d;
@@ -612,26 +738,32 @@ footer p {
 
 /* END TAGS */
 /* PAGINATION */
+/* line 299, sass/main.sass */
 .paginator {
   font-size: 3em;
   text-align: center;
 }
+/* line 302, sass/main.sass */
 .paginator span {
   font-size: 0.5em;
 }
+/* line 304, sass/main.sass */
 .paginator a.previous {
   float: left;
 }
+/* line 306, sass/main.sass */
 .paginator a.next {
   float: right;
 }
 
 /* END PAGINATION */
 /* TAGS/CATEGORIES */
+/* line 311, sass/main.sass */
 .page-title {
   border-bottom: 2px solid black;
   margin: 0 2em;
 }
+/* line 314, sass/main.sass */
 .page-title h1 {
   font-size: 3em;
   padding-bottom: 0.75em;
@@ -639,12 +771,14 @@ footer p {
   text-align: left;
 }
 
+/* line 319, sass/main.sass */
 .count {
   float: right;
 }
 
 /* TAGS/CATEGORIES */
 /* SOCIAL ICONS */
+/* line 324, sass/main.sass */
 .icon {
   width: 2em;
   height: 2em;
@@ -652,22 +786,26 @@ footer p {
   padding: 0 0.5em;
 }
 
+/* line 330, sass/main.sass */
 .icons {
   margin: 2em auto;
 }
 
 /* DISQUS COMMENTS */
+/* line 334, sass/main.sass */
 #disqus_thread {
   margin-bottom: 10em;
 }
 
 /* GRAVATARS */
+/* line 338, sass/main.sass */
 .gravatar {
   border-radius: 50%;
 }
 
 /* END GRAVATARS */
 /* EMOJIS */
+/* line 343, sass/main.sass */
 img.emoji {
   margin: 0;
   vertical-align: -0.3em;
@@ -676,13 +814,15 @@ img.emoji {
 }
 
 /* END EMOJIS */
-
-/*# sourceMappingURL=main.css.map */
-
+/* TABLE */
+/* line 351, sass/main.sass */
 th, td {
   padding-left: 10px;
 }
 
+/* line 354, sass/main.sass */
 th:first-child, td:first-child {
   padding-left: 0;
 }
+
+/* END TABLE */

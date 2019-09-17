@@ -45,7 +45,7 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
 
   Python開発者の給与はほか言語と比べて高い。
 
-  [参考](https://www.bizreach.co.jp/pressroom/pressrelease/2018/0807.html)
+  [参考:プログラミング言語ごとの年収ランキング](https://www.bizreach.co.jp/pressroom/pressrelease/2018/0807.html)
 
   プログラムについて質問するサイトでの質問数を見てもPythonは、かなり伸びているので、成長していると言える。
 
@@ -73,7 +73,7 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
 
   ![システム構成の図（Web）](img_pyconjp2019day1/6.png)
 
-  [SORACOM](https://qiita.com/Junpei_Takagi/items/2db77582890a02c9b03e)
+  [SORACOMとは](https://qiita.com/Junpei_Takagi/items/2db77582890a02c9b03e)
 
 #### センシングとは
 
@@ -89,7 +89,7 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
 
   センサー関連のPythonライブラリ。IoTが手軽にできる。
 
-  [リンク](https://qiita.com/mine820/items/3a4fea28bfeb48c0e24e)
+  [リンク:Groveシステムを使用して何ができるのか？](https://qiita.com/mine820/items/3a4fea28bfeb48c0e24e)
 
 #### LINE Notify
 
@@ -97,7 +97,7 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
 
   LINEのチャットに通知を飛ばすことができる。
 
-  [参考](https://liginc.co.jp/358121)
+  [参考:LINE Notifyとは](https://liginc.co.jp/358121)
 
 ### Djangoで実践ドメイン駆動設計による実装
 
@@ -115,7 +115,7 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
 
   4. 境界付けられたコンテキストの中のユビキタス言語で話す
 
-  [参考](https://little-hands.hatenablog.com/entry/2018/12/10/ddd-architecture)
+  [参考:DDDとは](https://little-hands.hatenablog.com/entry/2018/12/10/ddd-architecture)
 
 #### DIコンテナ
 
@@ -143,7 +143,7 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
 
   簡単に実装でき、ボトルネックを見つけるのも簡単なのが特徴。
 
-  [参考](https://github.com/ymyzk/wsgi_lineprof)
+  [参考:wsgi_lineprofのソースコード](https://github.com/ymyzk/wsgi_lineprof)
 
 #### CPythonの評価過程
 

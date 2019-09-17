@@ -46,7 +46,7 @@ Summary: PyCon JP 2019 Day2 についてのまとめ
 
   組み込み用に軽量化された Python
 
-  [参考](https://qiita.com/inachi/items/c668a03a03cf04b04f16)
+  [参考:MicroPython と CPython の違い](https://qiita.com/inachi/items/c668a03a03cf04b04f16)
 
 ### Pythonで始めてみよう関数型プログラミング
 
@@ -166,11 +166,52 @@ Summary: PyCon JP 2019 Day2 についてのまとめ
 
 ### Python Website is Slow? Think Again!
 
-#### 
+#### なぜ遅いと思われているのか
+
+  * インタプリタ言語
+
+  * GILを使っている
+
+#### どう改善していくか
+
+  1. DB へのアクセス回数を調査する
+
+  I/O Bounds なのが多いので、これを減らす。
+
+  2. asincio を使用する
+
+  非同期で動作させる。
+
+  3. Cache, serverless, Use python3 etc...
+
+#### Python2 -> Python3
+
+  レスポンスタイム、CPU使用率共に改善し、安定する。
+
+#### まとめ
+
+  大体のボトルネックは、I/O Bounds だが、もし CPU Bounds だった場合にほか言語を検討すると良い。
 
 ### 入門 自作検索エンジン
 
-#### 
+  [発表資料](https://speakerdeck.com/ryook/the-first-step-self-made-full-text-search)
+
+#### 全文検索の種類
+
+  * Grep型
+  線形走査する。
+
+  * 牽引（インデックス）型
+  あらかじめ検索対象となる文章群を走査して牽引データを作っておく。
+
+  * ベクトル型
+  特徴ベクトルを使ってベクトル間の距離を計算。
+
+#### 検索処理の流れ
+
+  ![インデクシング処理](img_pyconjp2019day2/2.png)
+
+  ![検索処理](img_pyconjp2019day2/3.png)
 
 ### Getting Started with Asynchronous Python Web Development
 
