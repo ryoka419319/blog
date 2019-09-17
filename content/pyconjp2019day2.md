@@ -215,4 +215,25 @@ match(input, pattern, action)
 
 ### Getting Started with Asynchronous Python Web Development
 
-#### 
+#### aiohttp
+
+  以下でインストールできます。
+
+```
+$ pip install aiohttp
+```
+
+```python
+from aiohttp import web
+import asyncpg
+
+async def get_hn_stories(req):
+    db_pool = req.app['db_pool']
+    by = req.match_info.get('by')
+    async with db_pool.acquire() as conn:
+        rows = await conn.fetchrow('SELECT * FROM people')
+        if len(rows) == 0:
+            break
+```
+
+  ※ファイルシステム操作は非同期ではないです。
