@@ -72,23 +72,23 @@ Summary: PyCon JP 2019 Day2 についてのまとめ
 
   Python では、[fn.py](https://github.com/kachayev/fn.py) を使用する。
 
-```
+```bash
 $ pip3 install fn.py
 ```
 
-```
-  from fn import F, _
-  from operator import add, mul
+```python
+from fn import F, _
+from operator import add, mul
 
-  # F(f, *args) means partial application
-  # same as functools.partial but returns fn.F instance
-  assert F(add, 1)(10) == 11
+# F(f, *args) means partial application
+# same as functools.partial but returns fn.F instance
+assert F(add, 1)(10) == 11
 
-  # F << F means functions composition,
-  # so (F(f) << g)(x) == f(g(x))
-  f = F(add, 1) << F(mul, 100)
-  assert list(map(f, [0, 1, 2])) == [1, 101, 201]
-  assert list(map(F() << str << (_ ** 2) << (_ + 1), range(3))) == ["1", "4", "9"]
+# F << F means functions composition,
+# so (F(f) << g)(x) == f(g(x))
+f = F(add, 1) << F(mul, 100)
+assert list(map(f, [0, 1, 2])) == [1, 101, 201]
+assert list(map(F() << str << (_ ** 2) << (_ + 1), range(3))) == ["1", "4", "9"]
 ```
 
 #### 永続データ構造
@@ -99,33 +99,33 @@ $ pip3 install fn.py
 
   [pyrsistent](https://github.com/tobgu/pyrsistent)
 
-  ```
-  >>> from pyrsistent import v, pvector
+```python
+>>> from pyrsistent import v, pvector
 
-  # No mutation of vectors once created, instead they
-  # are "evolved" leaving the original untouched
-  >>> v1 = v(1, 2, 3)
-  >>> v2 = v1.append(4)
-  >>> v3 = v2.set(1, 5)
-  >>> v1
-  pvector([1, 2, 3])
-  >>> v2
-  pvector([1, 2, 3, 4])
-  >>> v3
-  pvector([1, 5, 3, 4])
+# No mutation of vectors once created, instead they
+# are "evolved" leaving the original untouched
+>>> v1 = v(1, 2, 3)
+>>> v2 = v1.append(4)
+>>> v3 = v2.set(1, 5)
+>>> v1
+pvector([1, 2, 3])
+>>> v2
+pvector([1, 2, 3, 4])
+>>> v3
+pvector([1, 5, 3, 4])
 
-  # Random access and slicing
-  >>> v3[1]
-  5
-  >>> v3[1:3]
-  pvector([5, 3])
+# Random access and slicing
+>>> v3[1]
+5
+>>> v3[1:3]
+pvector([5, 3])
 
-  # Iteration
-  >>> list(x + 1 for x in v3)
-  [2, 6, 4, 5]
-  >>> pvector(2 * x for x in range(3))
-  pvector([0, 2, 4])
-  ```
+# Iteration
+>>> list(x + 1 for x in v3)
+[2, 6, 4, 5]
+>>> pvector(2 * x for x in range(3))
+pvector([0, 2, 4])
+```
 
 #### 参照透過性
 
