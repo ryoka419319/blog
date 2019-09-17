@@ -46,7 +46,7 @@ Summary: PyCon JP 2019 Day2 についてのまとめ
 
   組み込み用に軽量化された Python
 
-  [参考:MicroPython と CPython の違い](https://qiita.com/inachi/items/c668a03a03cf04b04f16)
+  [参考：MicroPython と CPython の違い](https://qiita.com/inachi/items/c668a03a03cf04b04f16)
 
 ### Pythonで始めてみよう関数型プログラミング
 
@@ -76,7 +76,7 @@ Summary: PyCon JP 2019 Day2 についてのまとめ
   $ pip3 install fn.py
   ```
 
-  ```python
+  ```
   from fn import F, _
   from operator import add, mul
 
@@ -99,7 +99,7 @@ Summary: PyCon JP 2019 Day2 についてのまとめ
 
   [pyrsistent](https://github.com/tobgu/pyrsistent)
 
-  ```python
+  ```
   >>> from pyrsistent import v, pvector
 
   # No mutation of vectors once created, instead they
@@ -143,7 +143,7 @@ Summary: PyCon JP 2019 Day2 についてのまとめ
 
   [pampy](https://github.com/santinic/pampy)
 
-  ```python
+  ```
   from pampy import match, _
 
   input = [1, 2, 3]
