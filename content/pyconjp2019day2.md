@@ -158,7 +158,7 @@ Summary: PyCon JP 2019 Day2 についてのまとめ
 
   モナドは、Haskell で標準ライブラリとして提供され広まった。
 
-  ![モナドとは型クラス](img/img_pyconjp2019day2/1.png)
+  ![モナドとは型クラス](img_pyconjp2019day2/1.png)
 
 #### Maybeモナド
 

@@ -13,7 +13,7 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
 
 ネットワークをコントロールしているところがあって、Wi-Fiもかなり快適。
 
-![Wi-Fi Controll](img/img_pyconjp2019day1/1.JPG)
+![Wi-Fi Controll](img_pyconjp2019day1/1.JPG)
 
 ## スケジュール
 
@@ -49,7 +49,7 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
 
   プログラムについて質問するサイトでの質問数を見てもPythonは、かなり伸びているので、成長していると言える。
 
-  ![Stock Overflowでのpythonの成長率](img/img_pyconjp2019day1/2.png)
+  ![Stock Overflowでのpythonの成長率](img_pyconjp2019day1/2.png)
 
 * コミュニティ
 
@@ -59,7 +59,7 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
 
 #### Pythonの求人数
 
-  ![Pythonの求人数](img/img_pyconjp2019day1/3.JPG)
+  ![Pythonの求人数](img_pyconjp2019day1/3.JPG)
 
   Pythonの求人は、かなり増加傾向。
 
@@ -67,11 +67,11 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
 
 #### IoTシステム構成
 
-  ![システム構成の図（デバイス）](img/img_pyconjp2019day1/4.png)
+  ![システム構成の図（デバイス）](img_pyconjp2019day1/4.png)
 
-  ![システム構成の図（クラウド）](img/img_pyconjp2019day1/5.png)
+  ![システム構成の図（クラウド）](img_pyconjp2019day1/5.png)
 
-  ![システム構成の図（Web）](img/img_pyconjp2019day1/6.png)
+  ![システム構成の図（Web）](img_pyconjp2019day1/6.png)
 
   [SORACOM](https://qiita.com/Junpei_Takagi/items/2db77582890a02c9b03e)
 
@@ -79,11 +79,11 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
 
   センサー（感知器）などを使用してさまざまな情報を計測・数値化する技術。
 
-  ![センシングの図（計測）](img/img_pyconjp2019day1/7.png)
+  ![センシングの図（計測）](img_pyconjp2019day1/7.png)
 
-  ![センシングの図（監視）](img/img_pyconjp2019day1/8.png)
+  ![センシングの図（監視）](img_pyconjp2019day1/8.png)
 
-  ![センシングの図（通知）](img/img_pyconjp2019day1/9.png)
+  ![センシングの図（通知）](img_pyconjp2019day1/9.png)
 
 #### Grove System
 
@@ -164,4 +164,4 @@ Summary: PyCon JP 2019 Day1 についてのまとめ
   C のコードを書いて middleware で実装する
 
 
-[2日目に続く>>](https://ryoka419319.github.io/pyconjp2019day2.html)
+[2日目に続く>>](https://ryoka419319.github.io/pycon-jp-2019-day2.html)
