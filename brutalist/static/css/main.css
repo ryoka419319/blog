@@ -320,18 +320,24 @@ section, article, header, footer, nav, aside, hgroup {
 }
 
 /********END HTML5 ELEMENT DECLARATIONS****** */
+@media screen and (max-width: 714px) {
+  /* line 5, sass/_sp.sass */
+  .article article .content p {
+    font-size: 14px;
+  }
+}
 /* END MIXINS */
 /* VARIABLES */
 /* END VARIABLES */
 /* FONTS */
-/* line 24, sass/main.sass */
+/* line 25, sass/main.sass */
 body {
   font-family: "Lato", sans-serif;
 }
 
 /* END FONTS */
 /* MAIN CONTENT CONTAINER */
-/* line 29, sass/main.sass */
+/* line 30, sass/main.sass */
 .page {
   max-width: 50em;
   /* max-width: 42.5em */
@@ -341,19 +347,19 @@ body {
   line-height: 1.5;
 }
 @media (min-width: 55em) {
-  /* line 29, sass/main.sass */
+  /* line 30, sass/main.sass */
   .page {
     padding-left: 30%;
   }
 }
 @media (min-width: 65em) {
-  /* line 29, sass/main.sass */
+  /* line 30, sass/main.sass */
   .page {
     padding-left: 20%;
   }
 }
 @media (min-width: 75em) {
-  /* line 29, sass/main.sass */
+  /* line 30, sass/main.sass */
   .page {
     padding-left: 0;
   }
@@ -361,19 +367,19 @@ body {
 
 /* END MAIN CONTENT CONTAINER */
 /* LINKS */
-/* line 45, sass/main.sass */
+/* line 46, sass/main.sass */
 a {
   text-decoration: underline;
   color: #232a2e;
 }
-/* line 48, sass/main.sass */
+/* line 49, sass/main.sass */
 a:hover {
   color: #39739d;
 }
 
 /* END LINKS */
 /* NAVIGATION */
-/* line 54, sass/main.sass */
+/* line 55, sass/main.sass */
 div#masthead img {
   display: inline-block;
   max-width: 20%;
@@ -381,13 +387,13 @@ div#masthead img {
   height: auto;
 }
 @media (min-width: 37.5em) {
-  /* line 54, sass/main.sass */
+  /* line 55, sass/main.sass */
   div#masthead img {
     max-width: 10%;
   }
 }
 @media (min-width: 55em) {
-  /* line 54, sass/main.sass */
+  /* line 55, sass/main.sass */
   div#masthead img {
     display: block;
     max-width: 60%;
@@ -395,13 +401,13 @@ div#masthead img {
   }
 }
 @media (min-width: 65em) {
-  /* line 54, sass/main.sass */
+  /* line 55, sass/main.sass */
   div#masthead img {
     max-width: 50%;
   }
 }
 @media (min-width: 55em) {
-  /* line 53, sass/main.sass */
+  /* line 54, sass/main.sass */
   div#masthead {
     position: fixed;
     max-width: 20%;
@@ -409,7 +415,7 @@ div#masthead img {
     padding-top: 5%;
   }
 }
-/* line 73, sass/main.sass */
+/* line 74, sass/main.sass */
 div#masthead nav#menu {
   clear: both;
   -webkit-transition: all 0.3s ease-out;
@@ -421,36 +427,36 @@ div#masthead nav#menu {
   max-height: 0;
 }
 @media (min-width: 55em) {
-  /* line 73, sass/main.sass */
+  /* line 74, sass/main.sass */
   div#masthead nav#menu {
     max-height: none;
     padding-top: 15%;
   }
-  /* line 85, sass/main.sass */
+  /* line 86, sass/main.sass */
   div#masthead nav#menu li {
     display: block;
     font-weight: 400;
     font-size: 1.2em;
   }
 }
-/* line 90, sass/main.sass */
+/* line 91, sass/main.sass */
 div#masthead nav#menu#menu.active {
   max-height: 15em;
   padding: 2em 0;
 }
-/* line 94, sass/main.sass */
+/* line 95, sass/main.sass */
 div#masthead nav#menu ul {
   border-top: 1px solid #808080;
   text-align: center;
 }
 @media (min-width: 55em) {
-  /* line 94, sass/main.sass */
+  /* line 95, sass/main.sass */
   div#masthead nav#menu ul {
     border: 0;
     text-align: left;
   }
 }
-/* line 101, sass/main.sass */
+/* line 102, sass/main.sass */
 div#masthead nav#menu li a {
   display: block;
   padding: 0.8em;
@@ -458,12 +464,12 @@ div#masthead nav#menu li a {
   border-bottom: 1px solid #808080;
 }
 @media (min-width: 55em) {
-  /* line 101, sass/main.sass */
+  /* line 102, sass/main.sass */
   div#masthead nav#menu li a {
     border: 0;
   }
 }
-/* line 109, sass/main.sass */
+/* line 110, sass/main.sass */
 div#masthead a#menu-link {
   float: right;
   display: block;
@@ -472,7 +478,7 @@ div#masthead a#menu-link {
   font-size: 1.2em;
 }
 @media (min-width: 55em) {
-  /* line 109, sass/main.sass */
+  /* line 110, sass/main.sass */
   div#masthead a#menu-link {
     display: none;
   }
@@ -480,78 +486,78 @@ div#masthead a#menu-link {
 
 /* END NAVIGATION */
 /* FOOTER */
-/* line 120, sass/main.sass */
+/* line 121, sass/main.sass */
 footer {
   margin-bottom: 2em;
   margin-top: 2em;
 }
-/* line 123, sass/main.sass */
+/* line 124, sass/main.sass */
 footer p {
   color: #abb4b9;
 }
 
 /* END FOOTER STYLES */
 /* ARTICLES */
-/* line 128, sass/main.sass */
+/* line 129, sass/main.sass */
 .articles {
   text-align: left;
   padding: 1.5em;
 }
-/* line 131, sass/main.sass */
+/* line 132, sass/main.sass */
 .articles ol li {
   padding-bottom: 4em;
   padding-top: 1em;
 }
 @media (min-width: 55em) {
-  /* line 128, sass/main.sass */
+  /* line 129, sass/main.sass */
   .articles {
     padding: 2em;
     padding-top: 4.25em;
   }
 }
-/* line 137, sass/main.sass */
+/* line 138, sass/main.sass */
 .articles article {
   line-height: 2em;
 }
-/* line 139, sass/main.sass */
+/* line 140, sass/main.sass */
 .articles article footer {
   padding-bottom: 0.25em;
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 143, sass/main.sass */
+/* line 144, sass/main.sass */
 .articles article header {
   padding-bottom: 1em;
 }
-/* line 145, sass/main.sass */
+/* line 146, sass/main.sass */
 .articles article header a {
   text-decoration: none;
 }
-/* line 147, sass/main.sass */
+/* line 148, sass/main.sass */
 .articles article header h2 {
   font-size: 2em;
   line-height: 1.3em;
 }
-/* line 150, sass/main.sass */
+/* line 151, sass/main.sass */
 .articles article .summary {
   padding-bottom: 1em;
   font-size: 1.125em;
   font-weight: 100;
 }
-/* line 154, sass/main.sass */
+/* line 155, sass/main.sass */
 .articles article .readmore {
   color: #39739d;
   float: right;
   text-decoration: underline;
 }
-/* line 158, sass/main.sass */
+/* line 159, sass/main.sass */
 .articles article .tags {
   list-style: none;
   margin: 0;
   overflow: hidden;
   padding: 0;
 }
-/* line 163, sass/main.sass */
+/* line 164, sass/main.sass */
 .articles article .tags li {
   float: left;
   padding: 0;
@@ -559,14 +565,14 @@ footer p {
 
 /* END ARTICLES */
 /* ARTICLE */
-/* line 170, sass/main.sass */
+/* line 171, sass/main.sass */
 .article img {
   max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 173, sass/main.sass */
+/* line 174, sass/main.sass */
 .article article {
   display: inline-block;
   width: 85%;
@@ -578,20 +584,20 @@ footer p {
   /*Article Header */
   /* Article content styles */
 }
-/* line 181, sass/main.sass */
+/* line 182, sass/main.sass */
 .article article footer {
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 184, sass/main.sass */
+/* line 185, sass/main.sass */
 .article article footer p {
   text-align: center;
 }
-/* line 188, sass/main.sass */
+/* line 189, sass/main.sass */
 .article article header .project-header-logo {
   padding-bottom: 4em;
 }
-/* line 190, sass/main.sass */
+/* line 191, sass/main.sass */
 .article article header h2 {
   font-size: 2em;
   /* 32/16 = 2 */
@@ -599,7 +605,7 @@ footer p {
   font-weight: 900;
   text-align: center;
 }
-/* line 197, sass/main.sass */
+/* line 198, sass/main.sass */
 .article article .content {
   font-size: 1.125em;
   /* 18/16 = 1.125 */
@@ -609,10 +615,9 @@ footer p {
   /* italics */
   /* code blocks */
 }
-/* line 201, sass/main.sass */
+/* line 202, sass/main.sass */
 .article article .content p {
   padding-bottom: 1.5em;
-  font-size: 1.6rem;
 }
 /* line 205, sass/main.sass */
 .article article .content h2 {
