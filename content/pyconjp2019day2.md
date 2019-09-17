@@ -72,11 +72,11 @@ Summary: PyCon JP 2019 Day2 についてのまとめ
 
   Python では、[fn.py](https://github.com/kachayev/fn.py) を使用する。
 
-  ```
-  $ pip3 install fn.py
-  ```
+```
+$ pip3 install fn.py
+```
 
-  ```
+```
   from fn import F, _
   from operator import add, mul
 
@@ -89,7 +89,7 @@ Summary: PyCon JP 2019 Day2 についてのまとめ
   f = F(add, 1) << F(mul, 100)
   assert list(map(f, [0, 1, 2])) == [1, 101, 201]
   assert list(map(F() << str << (_ ** 2) << (_ + 1), range(3))) == ["1", "4", "9"]
-  ```
+```
 
 #### 永続データ構造
 
